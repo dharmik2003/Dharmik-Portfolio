@@ -1,9 +1,11 @@
 {
   "name": "lama-dev-portfolio-starter",
+  "homepage": "https://dharmik2003.github.io/Dharmik-Portfolio",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",

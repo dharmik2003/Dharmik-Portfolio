@@ -8,7 +8,7 @@ import Computer from './../../../public/coding-png-11.png'
 import Certificate from './../../../public/certificateicon.png'
 import Man from './../../../public/man-working.png'
 
-export interface Certificate {
+export interface CCertificate {
   url: string,
   title: string
 }
@@ -16,7 +16,7 @@ export interface Certificate {
 const Aboutpage = () => {
 
 
-  const certificate: Certificate[] = [
+  const certificate: CCertificate[] = [
     { url: "https://www.coursera.org/account/accomplishments/verify/KJXYEZR8K88N", title: "Crash Course on Python" },
     { url: "https://www.coursera.org/account/accomplishments/verify/2D5VJ4K7FEQ7", title: "HTML, CSS, and JS for Web Developers" },
     { url: "https://www.coursera.org/account/accomplishments/verify/AQ25K6DW3PLM", title: "Decentralized Applications (Dapps)" },
@@ -175,7 +175,7 @@ const Aboutpage = () => {
                 </ul> */}
                 <ul className='list-disc list-inside'>
                   {
-                    certificate.map((link: Certificate) => (
+                    certificate.map((link: CCertificate) => (
                       <li key={link.title} className='text-black font-semibold my-3 pl-4'>
                         <a href={link.url} target="_blank" className='text-black text-md sm:text-xl hover:text-blue-600 font-semibold'>{link.title}</a>
                       </li>
