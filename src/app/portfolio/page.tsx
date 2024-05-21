@@ -4,6 +4,7 @@ import { motion, useScroll, useTransform } from 'framer-motion'
 import { Projectdata, ProjectType } from '../data'
 import Image from 'next/image'
 import Link from 'next/link'
+import { FaAngleLeft } from "react-icons/fa6";
 
 
 const Portfoliopage = () => {
@@ -18,7 +19,10 @@ const Portfoliopage = () => {
     <motion.div className="h-full" initial={{ y: "-200vh" }} animate={{ y: "0%" }} transition={{ duration: 1 }}>
 
       <div className='h-[600vh] relative' ref={ref}>
-        <div className='w-screen h-[calc(100vh-6rem)] mb-10 flex items-center justify-center sm:text-5xl md:text-6xl lg:text-7xl text-4xl text-center'>My Works</div>
+        <div className='w-screen h-[calc(100vh-6rem)] relative mb-10 flex items-center justify-center sm:text-5xl md:text-6xl lg:text-7xl text-4xl text-center'>My Works</div>
+        <div className='absolute top-[650px] flex justify-center text-white items-center left-[780px] w-[130px] h-[50px] bg-black rounded-lg'>
+          <FaAngleLeft className='text-white -rotate-90' />Scroll Down
+        </div>
         <div className='sticky top-0 flex h-screen gap-4 items-center overflow-hidden'>
          <motion.div style={{x}} className='flex'>
             <div className={`h-screen w-screen flex items-center justify-center bg-gradient-to-r from-purple-300 to-red-300`}/>
@@ -57,6 +61,8 @@ const Portfoliopage = () => {
         </div>
         
       </div>
+
+
       <div className='h-screen mt-5 w-screen flex flex-col gap-10 items-center justify-center text-center'>
         <h1 className='sm:text-5xl md:text-6xl lg:text-7xl text-3xl'>Do you have a Project?</h1>
         <div className='relative'>
