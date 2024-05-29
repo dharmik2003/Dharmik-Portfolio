@@ -1,6 +1,7 @@
 import movie from './../../public/images/movie1.png'
 import burderbyte from './../../public/images/burderbyte1.png'
 import greenity from './../../public/images/greenity.png'
+import RealState from './../../public/images/realestate-removebg-preview.png'
 
 export interface ProjectType{
     id:number,
@@ -37,24 +38,25 @@ export const Projectdata: ProjectType[] = [
     },
     {
         id: 3,
-        title: "Greenity",
+        title: "Real Estate",
         color: "from-blue-300 to-violet-300",
-        image1: greenity,
-        description: 'TLed front-end development for Greenity, connecting citizens and municipalities through event-based tree planting for urban greenery. Designed 15+ screens and managed front-end and back-end tasks, including CRUD operations in Firebase, QR code generation, data retrieval via QR scanning and bug resolution. Presented the app with a team of 5 at the SSIP-Gujarat Hackathon, advancing to the Final round.',
-        tech:['Next.Js','TypeScript','Taiwind','Mongodb'],
+        image1: RealState,
+        description: 'This real estate website project enables users to sell or rent houses and rooms, while also facilitating communication between sellers and clients through a built-in chat feature. The platform empowers seamless property transactions and engaging interactions, fostering a user-friendly and efficient online real estate experience.',
+        tech: ['Next.Js', 'TypeScript', 'Taiwind', 'Mongodb'],
         code: 'https://github.com/dharmik2003/BurgerByte',
-        type:"app"
+        type: "web"
     },
     {
         id: 4,
-        title: "BurgetByte",
+        title: "Greenity",
         color: "from-violet-300 to-purple-300",
-        image1: burderbyte,
-        description: 'This project allows users to purchase burgers using Razorpay integration, along with a feature for reserving tables at a hotel, offering a seamless experience for both ordering food and making reservations.',
-        tech:['Next.Js','TypeScript','Taiwind','Mongodb'],
+        image1: greenity,
+        description: 'TLed front-end development for Greenity, connecting citizens and municipalities through event-based tree planting for urban greenery. Designed 15+ screens and managed front-end and back-end tasks, including CRUD operations in Firebase, QR code generation, data retrieval via QR scanning and bug resolution. Presented the app with a team of 5 at the SSIP-Gujarat Hackathon, advancing to the Final round.',
+        tech:['Vite','TypeScript','CSS','Mongodb atlas','Socket'],
         code: 'https://github.com/dharmik2003/BurgerByte',
-        type:"web"
+        type:"app"
     },
+    
     {
         id: 5,
         title: "BurgetByte",
